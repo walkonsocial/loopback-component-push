@@ -24,35 +24,37 @@ android
 notifications
 * Optional Job to take scheduled notification requests
 * Push connector that interact with device registration records and push
-providers such as APNS, GCM, and MPNS.
+providers such as APNS, GCM, and MPNS
 * Push model to provide high level APIs for device-independent push notifications
 
 ## Samples
 
 ### Node.js server
 
-An [example LoopBack server application](/example/server) is provided.  
+This module includes an [example LoopBack server application](https://github.com/strongloop/loopback-component-push/tree/master/example/server-2.0).  
 
-To run it:
+To run it, use these commands:
 
-    cd example/server
-    node app
+    $ cd example/server
+    $ npm install
+    $ bower install
+    $ node app
 
 Open your browser to [http://127.0.0.1:3010](http://127.0.0.1:3010).
 
-By default, the app uses an in-memory store for the application/installation data.
+By default, the application uses an in-memory store for the application/installation data.
 To change to a MongoDB instance, set the MONGODB environment variable to the MongoDB URL. For example,
 
     MONGODB=mongodb://localhost/demo node app
 
 ### iOS client
 
-The [iOS example app](/example/ios) uses LoopBack the LoopBack iOS SDK to enable
+The [iOS example app](https://github.com/strongloop/loopback-component-push/tree/master/example/ios) uses the LoopBack iOS SDK to enable
 and handle push notifications. 
 
 ### Android client
 
-The [Android example app](/example/android) uses LoopBack Android SDK to enable
+The [Android example app](https://github.com/strongloop/loopback-component-push/tree/master/example/android) uses the LoopBack Android SDK to enable
 and handle push notifications. 
 
 ## References
